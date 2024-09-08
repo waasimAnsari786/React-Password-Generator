@@ -1,0 +1,45 @@
+:root{
+  --my-font :   "Poppins", sans-serif;;
+  --my-letter-spacing : 1px
+}
+
+*{
+  font-family: var(--my-font);
+}
+
+body{
+  background-color: black;
+}
+
+input , button , label{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.leter-spacing{
+  letter-spacing: var(--my-letter-spacing);
+}
+
+.alert.alert-success{
+  position: absolute;
+  right: 0;
+  left: 0;
+  transition: 0.5s;
+  transform: translateY(-200%);
+  opacity: 0;
+}
+
+#show{
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+#hide{
+  transform: translateY(-200%);
+  opacity: 0;
+}
+
+.rough{
+  border: 1px solid white;
+}
